@@ -1,5 +1,4 @@
-// pages/index.tsx
-
+// app/page.tsx
 import Head from 'next/head';
 import ChessGame from '../components/ChessGame';
 
@@ -12,9 +11,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="main">
-        <ChessGame />
-      </main>
+      <ChessGame />
     </>
   );
 }

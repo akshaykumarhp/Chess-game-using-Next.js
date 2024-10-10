@@ -1,19 +1,21 @@
-import type { Config } from "tailwindcss";
+// tailwind.config.ts
+import { Config } from 'tailwindcss';
 
 const config: Config = {
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    './app/**/*.{js,ts,jsx,tsx}', // Adjust if your directories are different
+    './components/**/*.{js,ts,jsx,tsx}',
+    './pages/**/*.{js,ts,jsx,tsx}', // Include if you have a pages directory
   ],
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        'chess-dark': '#769656',
+        'chess-light': '#eeeed2',
       },
     },
   },
   plugins: [],
 };
+
 export default config;
