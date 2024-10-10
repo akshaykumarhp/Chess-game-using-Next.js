@@ -1,0 +1,22 @@
+/* globals.css */
+.chess-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #f3f4f6; /* Optional background color */
+  position: relative;
+}
+
+.chessboard-wrapper {
+  width: 90vw;
+  height: 90vh;
+  max-width: 90vh;
+  max-height: 90vw;
+}
+
+button.reset-btn {
+  position: absolute;
+  bottom: 10px;
+}
